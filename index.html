@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         * {
             margin: 0;
@@ -416,36 +418,68 @@
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-
             gap: 28px;
-
             margin-top: 45px;
         }
 
         .contact-card {
             background: #0d0d0d;
-
-            padding: 35px;
-
+            padding: 40px 25px;
             border-radius: 28px;
-
             text-align: center;
-
             display: flex;
-
             flex-direction: column;
-
             justify-content: center;
-
-            min-height: 220px;
-
+            min-height: 240px;
             transition: 0.35s ease;
+            border: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .contact-card:hover {
             transform: translateY(-6px);
-
             background: #141414;
+            border-color: rgba(216, 169, 55, 0.3);
+        }
+
+        .icon-circle {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #1a1a1a, #0d0d0d);
+            border: 1px solid rgba(216, 169, 55, 0.25);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            transition: 0.3s ease;
+        }
+
+        .icon-circle i {
+            font-size: 34px;
+            color: #d8a937;
+        }
+
+        .icon-circle.whatsapp i {
+            color: #25D366;
+        }
+
+        .contact-card:hover .icon-circle {
+            transform: scale(1.08);
+            border-color: rgba(216, 169, 55, 0.6);
+        }
+
+        .contact-value {
+            font-size: 16px;
+            color: #d7d7d7;
+            word-break: break-word;
+        }
+
+        .contact-value a {
+            color: inherit;
+            text-decoration: none;
         }
 
         .contact-card h3 {
@@ -562,6 +596,16 @@
             .contact-box {
                 padding: 35px 25px;
             }
+
+            .icon-circle {
+                width: 80px;
+                height: 80px;
+            }
+
+            .icon-circle i {
+                font-size: 28px;
+            }
+
         }
     </style>
 
@@ -793,40 +837,64 @@
 
     <!-- CONTACT -->
 
-    <section id="contact" class="contact-section">
+    <section id="contact">
 
-        <div class="contact-box">
+        <div class="section-title">
+            <small>CONTACT DETAILS</small>
+            <h2>Connect With Us</h2>
+        </div>
 
-            <div class="section-title">
+        <div class="contact-grid">
 
-                <small>CONTACT DETAILS</small>
-
-                <h2>Connect With Us</h2>
-
+            <div class="contact-card">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <p class="contact-value">
+                    <a href="tel:+917814559332">+91 78145 59332</a>
+                </p>
             </div>
 
-            <div class="contact-grid">
-
-                <div class="contact-card">
-                    <h3>Call / Whatsapp</h3>
-                    <p>+91 78145 59332</p>
+            <div class="contact-card">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-envelope"></i>
                 </div>
+                <p class="contact-value">
+                    <a href="mailto:royalflooringsolutions@gmail.com">
+                        royalflooringsolutions@gmail.com
+                    </a>
+                </p>
+            </div>
 
-                <div class="contact-card">
-                    <h3>Email</h3>
-                    <p>royalflooringsolutions@gmail.com</p>
+            <div class="contact-card">
+                <div class="icon-circle whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
                 </div>
+                <p class="contact-value">
+                    <a href="https://wa.me/917814559332" target="_blank">
+                        +91 78145 59332
+                    </a>
+                </p>
+            </div>
 
-                <div class="contact-card">
-                    <h3>Instagram</h3>
-                    <p>@royalflooringsolutions_official_pune</p>
+            <div class="contact-card">
+                <div class="icon-circle">
+                    <i class="fa-brands fa-instagram"></i>
                 </div>
+                <p class="contact-value">
+                    <a href="https://instagram.com/royalflooringsolutions_official_pune" target="_blank">
+                        Instagram Profile
+                    </a>
+                </p>
+            </div>
 
-                <div class="contact-card">
-                    <h3>Facebook</h3>
-                    <p>Royal Flooring Solutions Pune Maharashtra</p>
+            <div class="contact-card">
+                <div class="icon-circle">
+                    <i class="fa-brands fa-facebook"></i>
                 </div>
-
+                <p class="contact-value">
+                    Royal Flooring Solutions
+                </p>
             </div>
 
         </div>
