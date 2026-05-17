@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Royal Flooring Solutions</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
+          rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <style>
         * {
             margin: 0;
@@ -22,85 +15,68 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
             background: #050505;
             color: white;
             overflow-x: hidden;
         }
-
         img {
             width: 100%;
             display: block;
         }
-
         section {
             padding: 110px 8%;
         }
-
         /* ========================================
-           HERO
+        HERO
         ======================================== */
-
         .hero {
             height: 100vh;
-
-            background:
-                linear-gradient(rgba(0, 0, 0, 0.72),
-                    rgba(0, 0, 0, 0.82)),
-                url('images/project_1.jpeg');
-
+            background: linear-gradient(rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.82)),
+            /*url('images/wp_n_blind1.jpeg');*/
+            url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
-
             display: flex;
             align-items: center;
             justify-content: center;
-
             text-align: center;
             padding: 20px;
         }
-
         .hero-content {
             max-width: 950px;
         }
-
         .hero small {
             color: #d8a937;
             letter-spacing: 7px;
             text-transform: uppercase;
             font-size: 14px;
         }
-
         .hero h1 {
             font-size: 82px;
             line-height: 1.1;
             margin: 25px 0;
             font-weight: 700;
         }
-
         .hero h1 span {
             color: #d8a937;
         }
-
         .hero p {
             font-size: 22px;
             color: #d7d7d7;
             line-height: 1.9;
             margin-bottom: 45px;
         }
-
         .buttons {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
         }
-
         .btn {
             padding: 16px 38px;
             border-radius: 50px;
@@ -108,153 +84,119 @@
             font-weight: 600;
             transition: 0.35s;
         }
-
         .primary {
             background: #d8a937;
             color: black;
         }
-
         .secondary {
             border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
         }
-
         .btn:hover {
             transform: translateY(-5px);
         }
-
         /* ========================================
-           SECTION TITLE
+        SECTION TITLE
         ======================================== */
-
         .section-title {
             text-align: center;
             margin-bottom: 70px;
         }
-
         .section-title small {
             color: #d8a937;
             letter-spacing: 6px;
             text-transform: uppercase;
             font-size: 14px;
         }
-
         .section-title h2 {
             font-size: 58px;
             margin-top: 18px;
             font-weight: 700;
         }
-
         /* ========================================
-           ABOUT
+        ABOUT
         ======================================== */
-
         .about-section {
             background: #0b0b0b;
         }
-
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 70px;
             align-items: center;
         }
-
         .about-text small {
             color: #d8a937;
             letter-spacing: 6px;
             text-transform: uppercase;
             font-size: 14px;
         }
-
         .about-text h2 {
             font-size: 62px;
             line-height: 1.15;
             margin: 25px 0;
             font-weight: 700;
         }
-
         .about-main {
             color: #d8d8d8;
             font-size: 21px;
             line-height: 1.9;
             margin-bottom: 30px;
         }
-
         .about-sub {
             color: #8f8f8f;
             font-size: 18px;
             line-height: 1.9;
         }
-
         .about-image-wrapper {
             position: relative;
         }
-
         .about-image-wrapper img {
             height: 620px;
             object-fit: cover;
             border-radius: 34px;
         }
-
         .experience-box {
             position: absolute;
             left: -40px;
             bottom: -40px;
-
             background: #d8a937;
             color: black;
-
             padding: 35px 45px;
             border-radius: 28px;
-
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
         }
-
         .experience-box h3 {
             font-size: 52px;
             margin-bottom: 5px;
         }
-
         .experience-box p {
             font-size: 20px;
             font-weight: 600;
         }
-
         /* ========================================
-           SERVICES
+        SERVICES
         ======================================== */
-
         .services-section {
             background: #050505;
         }
-
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: 34px;
         }
-
         .service-card {
             background: linear-gradient(145deg, #121212, #101010);
-
             padding: 42px 36px;
-
             border-radius: 34px;
-
             border: 1px solid rgba(255, 255, 255, 0.06);
-
             transition: 0.35s ease;
         }
-
         .service-card:hover {
             transform: translateY(-10px);
-
             background: linear-gradient(145deg, #171717, #111111);
-
             border-color: rgba(255, 255, 255, 0.12);
         }
-
         .service-icon {
             width: 64px;
             height: 64px;
@@ -262,166 +204,124 @@
             border-radius: 20px;
             margin-bottom: 34px;
         }
-
         .service-card h3 {
             font-size: 34px;
             line-height: 1.3;
             margin-bottom: 18px;
             font-weight: 600;
         }
-
         .service-card p {
             color: #8f8f8f;
             font-size: 18px;
             line-height: 1.9;
         }
-
         /* ========================================
-           PROJECTS
+        PROJECTS
         ======================================== */
-
         .projects-section {
             background: #0b0b0b;
         }
-
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: 32px;
         }
-
         .project {
             background: #111;
-
             border-radius: 30px;
-
             overflow: hidden;
-
             border: 1px solid rgba(255, 255, 255, 0.08);
-
             transition: 0.4s;
         }
-
         .project:hover {
             transform: translateY(-10px);
         }
-
         .project img {
             height: 350px;
             object-fit: cover;
             transition: 0.5s;
         }
-
         .project:hover img {
             transform: scale(1.05);
         }
-
         .project-content {
             padding: 28px;
         }
-
         .project-content h3 {
             font-size: 28px;
             margin-bottom: 12px;
         }
-
         .project-content p {
             color: #d8a937;
             font-size: 18px;
         }
-
         /* ========================================
-           WHY CHOOSE US
+        WHY CHOOSE US
         ======================================== */
-
         .why-section {
             background: #050505;
         }
-
         .why-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 70px;
             align-items: center;
         }
-
         .why-image img {
             height: 620px;
             object-fit: cover;
             border-radius: 34px;
         }
-
         .why-content small {
             color: #d8a937;
             letter-spacing: 6px;
             text-transform: uppercase;
             font-size: 14px;
         }
-
         .why-content h2 {
             font-size: 62px;
             line-height: 1.2;
             margin: 25px 0 40px;
             font-weight: 700;
         }
-
         .why-points {
             display: flex;
             flex-direction: column;
             gap: 24px;
         }
-
         .why-card {
             background: linear-gradient(145deg, #121212, #101010);
-
             border: 1px solid rgba(255, 255, 255, 0.06);
-
             padding: 30px 32px;
-
             border-radius: 26px;
-
             color: #d7d7d7;
-
             font-size: 22px;
-
             line-height: 1.8;
-
             transition: 0.35s ease;
         }
-
         .why-card:hover {
             transform: translateY(-6px);
-
             background: linear-gradient(145deg, #171717, #111111);
-
             border-color: rgba(255, 255, 255, 0.12);
         }
-
         /* ========================================
-           CONTACT
+        CONTACT
         ======================================== */
-
         .contact-section {
             background: linear-gradient(to bottom, #0b0b0b, #050505);
         }
-
         .contact-box {
             background: #121212;
-
             padding: 70px;
-
             border-radius: 40px;
-
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
-
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 28px;
             margin-top: 45px;
         }
-
         .contact-card {
             background: #0d0d0d;
             padding: 40px 25px;
@@ -434,13 +334,11 @@
             transition: 0.35s ease;
             border: 1px solid rgba(255, 255, 255, 0.06);
         }
-
         .contact-card:hover {
             transform: translateY(-6px);
             background: #141414;
             border-color: rgba(216, 169, 55, 0.3);
         }
-
         .icon-circle {
             width: 90px;
             height: 90px;
@@ -448,465 +346,442 @@
             border-radius: 50%;
             background: radial-gradient(circle, #1a1a1a, #0d0d0d);
             border: 1px solid rgba(216, 169, 55, 0.25);
-
             display: flex;
             align-items: center;
             justify-content: center;
-
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
             transition: 0.3s ease;
         }
-
         .icon-circle i {
             font-size: 34px;
             color: #d8a937;
         }
-
         .icon-circle.whatsapp i {
             color: #25D366;
         }
-
         .contact-card:hover .icon-circle {
             transform: scale(1.08);
             border-color: rgba(216, 169, 55, 0.6);
         }
-
         .contact-value {
             font-size: 16px;
             color: #d7d7d7;
             word-break: break-word;
         }
-
         .contact-value a {
             color: inherit;
             text-decoration: none;
         }
-
         .contact-card h3 {
             color: #d8a937;
-
             margin-bottom: 15px;
-
             font-size: 24px;
         }
-
         .contact-card p {
             color: #d7d7d7;
-
             line-height: 1.8;
-
             font-size: 16px;
-
             word-break: break-word;
-
             overflow-wrap: break-word;
         }
-
         /* ========================================
-           FOOTER
+        FOOTER
         ======================================== */
-
         footer {
             text-align: center;
             padding: 35px;
-
             border-top: 1px solid rgba(255, 255, 255, 0.08);
-
             color: #777;
         }
-
         /* ========================================
-           RESPONSIVE
+        RESPONSIVE
         ======================================== */
-
-        @media(max-width:1000px) {
-
+        @media (max-width: 1000px) {
             .about-grid,
             .why-grid {
                 grid-template-columns: 1fr;
             }
-
             .hero h1 {
                 font-size: 56px;
             }
-
             .section-title h2,
             .about-text h2,
             .why-content h2 {
                 font-size: 42px;
             }
-
             .about-image-wrapper img,
             .why-image img {
                 height: 500px;
             }
-
             .experience-box {
                 left: 20px;
                 bottom: 20px;
                 padding: 25px 30px;
             }
-
             .why-card {
                 font-size: 18px;
             }
         }
-
-        @media(max-width:700px) {
-
+        @media (max-width: 700px) {
             section {
                 padding: 90px 6%;
             }
-
             .hero h1 {
                 font-size: 44px;
             }
-
             .hero p {
                 font-size: 18px;
             }
-
             .section-title h2,
             .about-text h2,
             .why-content h2 {
                 font-size: 34px;
             }
-
             .about-main {
                 font-size: 18px;
             }
-
             .service-card {
                 padding: 32px 26px;
             }
-
             .service-card h3 {
                 font-size: 28px;
             }
-
             .service-card p {
                 font-size: 17px;
             }
-
             .why-card {
                 padding: 24px;
                 font-size: 17px;
             }
-
             .contact-box {
                 padding: 35px 25px;
             }
-
             .icon-circle {
                 width: 80px;
                 height: 80px;
             }
-
             .icon-circle i {
                 font-size: 28px;
             }
-
         }
     </style>
-
 </head>
-
 <body>
 
-    <!-- HERO -->
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <small>Premium Interior Flooring Experts</small>
+        <h1>
+            Royal Flooring
+            <span>Solutions</span>
+        </h1>
+        <p>
+            Transforming homes, offices and commercial spaces across Pune
+            with luxury flooring and premium interior solutions.
+        </p>
+        <div class="buttons">
+            <a href="#projects" class="btn primary">
+                View Projects
+            </a>
+            <a href="#contact" class="btn secondary">
+                Contact Us
+            </a>
+        </div>
+    </div>
+</section>
 
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <small>Premium Interior Flooring Experts</small>
-
-            <h1>
-                Royal Flooring
-                <span>Solutions</span>
-            </h1>
-
-            <p>
-                Transforming homes, offices and commercial spaces across Pune
-                with luxury flooring and premium interior solutions.
+<!-- ABOUT -->
+<section class="about-section">
+    <div class="about-grid">
+        <div class="about-text">
+            <small>ABOUT US</small>
+            <h2>
+                Elegant Flooring With
+                Premium Finish & Style
+            </h2>
+            <p class="about-main">
+                Royal Flooring Solutions provides high-quality flooring
+                services for residential, commercial and luxury interior projects.
             </p>
-
-            <div class="buttons">
-
-                <a href="#projects" class="btn primary">
-                    View Projects
-                </a>
-
-                <a href="#contact" class="btn secondary">
-                    Contact Us
-                </a>
-
-            </div>
-
+            <p class="about-sub">
+                We specialize in wooden flooring, vinyl flooring,
+                laminate flooring, office flooring and custom flooring
+                solutions designed to elevate every space with a luxurious ambience.
+            </p>
         </div>
-
-    </section>
-
-    <!-- ABOUT -->
-
-    <section class="about-section">
-
-        <div class="about-grid">
-
-            <div class="about-text">
-
-                <small>ABOUT US</small>
-
-                <h2>
-                    Elegant Flooring With
-                    Premium Finish & Style
-                </h2>
-
-                <p class="about-main">
-                    Royal Flooring Solutions provides high-quality flooring
-                    services for residential, commercial and luxury interior projects.
-                </p>
-
-                <p class="about-sub">
-                    We specialize in wooden flooring, vinyl flooring,
-                    laminate flooring, office flooring and custom flooring
-                    solutions designed to elevate every space with a luxurious ambience.
-                </p>
-
+        <div class="about-image-wrapper">
+            <img src="images/wooden1.jpeg" alt="Flooring">
+            <div class="experience-box">
+                <h3>30+</h3>
+                <p>Successful Projects</p>
             </div>
-
-            <div class="about-image-wrapper">
-
-                <img src="images/project_3.jpeg" alt="Flooring">
-
-                <div class="experience-box">
-                    <h3>20+</h3>
-                    <p>Successful Projects</p>
-                </div>
-
-            </div>
-
         </div>
+<!--        <div className="relative">-->
+<!--            <img-->
+<!--                    src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop"-->
+<!--                    alt="Flooring"-->
+<!--                    className="rounded-3xl shadow-2xl h-[500px] w-full object-cover"-->
+<!--            />-->
 
-    </section>
+<!--            <div className="absolute -bottom-8 -left-8 bg-amber-400 text-black px-8 py-6 rounded-3xl shadow-xl">-->
+<!--                <h3 className="text-3xl font-bold">100+</h3>-->
+<!--                <p className="font-medium">Successful Projects</p>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</section>
 
-    <!-- SERVICES -->
-
-    <section class="services-section">
-
-        <div class="section-title">
-            <small>OUR SERVICES</small>
-            <h2>Flooring Solutions We Provide</h2>
+<!-- SERVICES -->
+<section class="services-section">
+    <div class="section-title">
+        <small>OUR SERVICES</small>
+        <h2>Flooring Solutions We Provide</h2>
+    </div>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon"></div>
+            <h3>Luxury Wooden Flooring</h3>
+            <p>Premium wood flooring installation crafted for timeless elegance and durability.</p>
         </div>
+        <div class="service-card">
+            <div class="service-icon"></div>
+            <h3>Designer Vinyl Flooring</h3>
+            <p>Stylish, water-resistant vinyl solutions tailored for modern living spaces.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"></div>
+            <h3>Laminate Flooring</h3>
+            <p>Elegant laminate designs crafted for premium interiors.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"></div>
+            <h3>Smart Office Flooring</h3>
+            <p>Professional flooring systems designed for productive and modern workspaces.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"></div>
+            <h3>Commercial Space Flooring</h3>
+            <p>Heavy-duty and aesthetic flooring solutions for retail, hospitality, and business environments.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"></div>
+            <h3>Customized Wallpaper</h3>
+            <p>Customized wallpapers that transform interiors with unique style and personality.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"></div>
+            <h3>Modern Blinds</h3>
+            <p>Elegant light-control solutions combining privacy, comfort, and contemporary design.</p>
+        </div>
+    </div>
+</section>
 
-        <div class="services-grid">
-
-            <div class="service-card">
-                <div class="service-icon"></div>
-                <h3>Wooden Flooring</h3>
-                <p>Premium quality installation and finishing for elegant interiors.</p>
+<!-- PROJECTS -->
+<section id="projects" class="projects-section">
+    <div class="section-title">
+        <small>ACTUAL CLIENT PROJECTS</small>
+        <h2>Our Real Work Showcase</h2>
+    </div>
+    <div class="projects">
+        <div class="project">
+            <img src="images/wp_n_blind1.jpeg" alt="">
+            <div class="project-content">
+                <h3>Wall-paper & Blind</h3>
+                <!--                <p>Baner, Pune</p>-->
             </div>
-
-            <div class="service-card">
-                <div class="service-icon"></div>
+        </div>
+        <div class="project">
+            <img src="images/vinyl1.jpeg" alt="">
+            <div class="project-content">
                 <h3>Vinyl Flooring</h3>
-                <p>Durable and stylish flooring solutions for modern homes.</p>
+                <!--                <p>Kharadi, Pune</p>-->
             </div>
-
-            <div class="service-card">
-                <div class="service-icon"></div>
-                <h3>Laminate Flooring</h3>
-                <p>Elegant laminate designs crafted for premium interiors.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon"></div>
-                <h3>Office Flooring</h3>
-                <p>Modern commercial flooring solutions for office spaces.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon"></div>
-                <h3>Commercial Flooring</h3>
-                <p>High-performance flooring built for commercial durability.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon"></div>
-                <h3>Customized Flooring</h3>
-                <p>Tailor-made flooring designs for luxury interiors.</p>
-            </div>
-
         </div>
-
-    </section>
-
-    <!-- PROJECTS -->
-
-    <section id="projects" class="projects-section">
-
-        <div class="section-title">
-            <small>ACTUAL CLIENT PROJECTS</small>
-            <h2>Our Real Work Showcase</h2>
+        <div class="project">
+            <img src="images/wooden1.jpeg" alt="">
+            <div class="project-content">
+                <h3>Wooden Flooring</h3>
+                <!--                <p>Wakad, Pune</p>-->
+            </div>
         </div>
-
-        <div class="projects">
-
-            <div class="project">
-                <img src="images/project_1.jpeg" alt="">
-                <div class="project-content">
-                    <h3>Wooden Flooring</h3>
-                    <p>Baner, Pune</p>
-                </div>
+        <div class="project">
+            <img src="images/wp1.jpeg" alt="">
+            <div class="project-content">
+                <h3>Wall-paper</h3>
+                <!--                <p>Wakad, Pune</p>-->
             </div>
-
-            <div class="project">
-                <img src="images/project_2.jpeg" alt="">
-                <div class="project-content">
-                    <h3>Vinyl Flooring</h3>
-                    <p>Kharadi, Pune</p>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="images/project_3.jpeg" alt="">
-                <div class="project-content">
-                    <h3>SPC Flooring</h3>
-                    <p>Wakad, Pune</p>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="images/project_3.jpeg" alt="">
-                <div class="project-content">
-                    <h3>SPC Flooring</h3>
-                    <p>Wakad, Pune</p>
-                </div>
-            </div>
-
         </div>
-
-    </section>
-
-    <!-- WHY CHOOSE US -->
-
-    <section class="why-section">
-
-        <div class="why-grid">
-
-            <div class="why-image">
-
-                <img src="images/project_4.jpeg" alt="Interior Flooring">
-
+        <div class="project">
+            <img src="images/vinyl2.jpeg" alt="">
+            <div class="project-content">
+                <h3>Vinyl Flooring</h3>
+                <!--                <p>Wakad, Pune</p>-->
             </div>
-
-            <div class="why-content">
-
-                <small>WHY CHOOSE US</small>
-
-                <h2>
-                    Premium Finish. Modern
-                    Design. Trusted Quality.
-                </h2>
-
-                <div class="why-points">
-
-                    <div class="why-card">
-                        ✔ High-quality materials with luxury finish
-                    </div>
-
-                    <div class="why-card">
-                        ✔ Experienced flooring installation experts
-                    </div>
-
-                    <div class="why-card">
-                        ✔ Modern aesthetic designs for homes & offices
-                    </div>
-
-                    <div class="why-card">
-                        ✔ Timely project completion with professional support
-                    </div>
-
-                </div>
-
-            </div>
-
         </div>
-
-    </section>
-
-    <!-- CONTACT -->
-
-    <section id="contact">
-
-        <div class="section-title">
-            <small>CONTACT DETAILS</small>
-            <h2>Connect With Us</h2>
+        <div class="project">
+            <img src="images/blind1.jpeg" alt="">
+            <div class="project-content">
+                <h3>Aesthetic Blind</h3>
+                <!--                <p>Wakad, Pune</p>-->
+            </div>
         </div>
-
-        <div class="contact-grid">
-
-            <div class="contact-card">
-                <div class="icon-circle">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <p class="contact-value">
-                    <a href="tel:+917814559332">+91 78145 59332</a>
-                </p>
+        <div class="project">
+            <img src="images/wooden2.jpeg" alt="">
+            <div class="project-content">
+                <h3>Wooden Flooring</h3>
+                <!--                <p>Wakad, Pune</p>-->
             </div>
-
-            <div class="contact-card">
-                <div class="icon-circle">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <p class="contact-value">
-                    <a href="mailto:royalflooringsolutions@gmail.com">
-                        royalflooringsolutions@gmail.com
-                    </a>
-                </p>
-            </div>
-
-            <div class="contact-card">
-                <div class="icon-circle whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <p class="contact-value">
-                    <a href="https://wa.me/917814559332" target="_blank">
-                        +91 78145 59332
-                    </a>
-                </p>
-            </div>
-
-            <div class="contact-card">
-                <div class="icon-circle">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <p class="contact-value">
-                    <a href="https://instagram.com/royalflooringsolutions_official_pune" target="_blank">
-                        Instagram Profile
-                    </a>
-                </p>
-            </div>
-
-            <div class="contact-card">
-                <div class="icon-circle">
-                    <i class="fa-brands fa-facebook"></i>
-                </div>
-                <p class="contact-value">
-                    Royal Flooring Solutions
-                </p>
-            </div>
-
         </div>
+        <div class="project">
+            <img src="images/blind3.jpeg" alt="">
+            <div class="project-content">
+                <h3>Modern Blind</h3>
+                <!--                <p>Wakad, Pune</p>-->
+            </div>
+        </div>
+        <div class="project">
+            <img src="images/wp2.jpeg" alt="">
+            <div class="project-content">
+                <h3>Wall-paper</h3>
+                <!--                <p>Wakad, Pune</p>-->
+            </div>
+        </div>
+    </div>
+</section>
 
-    </section>
+<!-- WHY CHOOSE US -->
+<section class="why-section">
+    <div class="why-grid">
+        <div class="why-image">
+<!--            <img src="images/vinyl3.jpeg" alt="Interior Flooring">-->
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" alt="Interior Flooring">
+        </div>
+        <div class="why-content">
+            <small>WHY CHOOSE US</small>
+            <h2>
+                Premium Finish. Modern
+                Design. Trusted Quality.
+            </h2>
+            <div class="why-points">
+                <div class="why-card">
+                    ✔ High-quality materials with luxury finish
+                </div>
+                <div class="why-card">
+                    ✔ Experienced flooring installation experts
+                </div>
+                <div class="why-card">
+                    ✔ Modern aesthetic designs for homes & offices
+                </div>
+                <div class="why-card">
+                    ✔ Timely project completion with professional support
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- FOOTER -->
+<!-- CONTACT -->
+<section id="contact">
+    <div class="section-title">
+        <small>CONTACT DETAILS</small>
+        <h2>Connect With Us</h2>
+    </div>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <div class="icon-circle">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <p class="contact-value">
+                <a href="tel:+917814559332">+91 78145 59332</a>
+            </p>
+        </div>
+        <div class="contact-card">
+            <div class="icon-circle">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <p class="contact-value">
+                <a href="mailto:amirraza0999@gmail.com">
+                    amirraza0999@gmail.com
+                </a>
+            </p>
+        </div>
+        <div class="contact-card">
+            <div class="icon-circle whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <p class="contact-value">
+                <a href="https://wa.me/917814559332" target="_blank">
+                    +91 78145 59332
+                </a>
+            </p>
+        </div>
+        <div class="contact-card">
+            <div class="icon-circle">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p class="contact-value">
+                <a href="https://instagram.com/royalflooringsolutions_official_pune" target="_blank">
+                    Instagram Profile
+                </a>
+            </p>
+        </div>
+        <div class="contact-card">
+            <div class="icon-circle">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <p class="contact-value">
+                Royal Flooring Solutions
+            </p>
+        </div>
+    </div>
+</section>
 
-    <footer>
+<!-- FOOTER -->
+<footer>
+    <p>
         © 2026 Royal Flooring Solutions • Pune, Maharashtra
-    </footer>
-
+    </p>
+    <div style="
+            margin-top:18px;
+            padding-top:18px;
+            border-top:1px solid rgba(255,255,255,0.08);
+            display:flex;
+            justify-content:center;
+            gap:22px;
+            flex-wrap:wrap;
+            align-items:center;
+            font-size:15px;
+            ">
+            <span style="
+               background: linear-gradient(90deg, #d8a937, #ffe7a3);
+               -webkit-background-clip:text;
+               -webkit-text-fill-color:transparent;
+               font-weight:700;
+               letter-spacing:1.5px;
+               ">
+            ✦ DRAZEN Studio
+            </span>
+        <a href="mailto:313danishshaikh@gmail.com"
+           style="
+               color:#d8a937;
+               text-decoration:none;
+               font-weight:500;
+               ">
+            <i class="fa-solid fa-envelope"></i>
+            Email
+        </a>
+        <a href="https://linkedin.com/in/danishrazashaikh"
+           target="_blank"
+           style="
+               color:#d8a937;
+               text-decoration:none;
+               font-weight:500;
+               ">
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+        </a>
+    </div>
+</footer>
 </body>
-
 </html>
